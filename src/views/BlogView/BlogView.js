@@ -14,11 +14,11 @@ console.log(selectedBlog)
     <h1 className="title">{selectedBlog.title}</h1>
     <p className="info">
         <img src={selectedBlog.author.avatar} alt="author" height={"40px"} className="avatar-img"/>
-        <br/>
-        {selectedBlog.author.name} | {selectedBlog.date}
-        
+      
     </p><br/>
-    {selectedBlog.content}
+    <span className="authorinfo"> {selectedBlog.author.name} | {selectedBlog.date}</span>
+    <br/><br/>
+    <span className="content" >{selectedBlog.content}</span>
     </div>
 
 
